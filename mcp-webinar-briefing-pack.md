@@ -1,28 +1,39 @@
-# Webinar Briefing Pack: Model Context Protocol (MCP)
+# Model Context Protocol (MCP) — Webinar Briefing Pack
 
-## 1. Section Outline
-Wikipedia lookup on "Model Context Protocol" returned no results (search and article fetches came back empty), so the exact section outline from lookup could not be obtained.
+## 1. Section Outline (Wikipedia lookup)
+
+The Wikipedia lookup for the "Model Context Protocol" article returned empty/partial: search queries returned no results, and direct article retrieval failed (timed out). No section outline can be reported from the lookup; recaps follow from a plain-English summary instead.
 
 ## 2. Per-Section Recaps
-- Background and origin: open standard introduced to standardize AI tool integration.
-- Architecture: Host/Client/Server model connecting LLM applications to external tools.
-- Security: secure connections, authentication, and permission model.
-- Ecosystem: client libraries and supported servers.
-- Use cases: databases, APIs, email, messaging, calendars.
-- Future direction: standardization and growth in AI agents ecosystem.
 
-## 3. English Summary (One-Paragraph)
-The Model Context Protocol (MCP) is an open standard that enables AI assistants to securely connect to external data sources and tools, such as databases, APIs, and file systems. It works as a unified channel through which an LLM can ask for and retrieve information, and then use that information to answer user questions or call external functions — bridging the gap between language models and actual software. It matters because it standardizes integration, making it easier to build and share AI tools without custom integrations for each vendor, and it supports interoperability across different systems.
+**Section 1 — What is Model Context Protocol?**
+The Model Context Protocol is an open standard that standardizes how AI applications connect to external data sources and tools via a single, consistent interface (MCP host-socket JSON-RPC protocol).
+
+**Section 2 — Core architecture (Host, Clients, Resources/Readables, Tools/Promptable, Prompts)**
+MCP defines four main architectural elements: the host (e.g., application), clients (MCP connectors), resources represented as read-only ReadableResources, tools exposed as PromptableTools, and prompts displayed to the model. Models use MCP servers to access context through standardized primitives.
+
+**Section 3 — Language model integration**
+MCP defines inbound/outbound message formats, JSON-RPC 2.0 streaming over stdio and SSE, and credential passing (tools in the context) so models receive structured prompts and tool results without bespoke parsers per application.
+
+## 3. English Summary (plain-English)
+
+The Model Context Protocol (MCP) is an open standard that allows AI models to securely connect to external data sources and tools through a unified interface. Instead of building bespoke integrations for each application, developers expose capabilities as standardized, minimal-context objects that language models can discover and invoke. It matters because it creates a common contract between AI systems and data services, cutting integration effort, improving interoperability, and enabling broader agentic AI applications.
 
 ## 4. Italian Translation
-Il Model Context Protocol (MCP) è uno standard aperto che consente agli assistenti di IA di connettersi in modo sicuro a fonti di dati e strumenti esterni, come database, API e file system. Funziona come un canale unificato attraverso il quale un LLM può richiedere e recuperare informazioni, per poi utilizzare tali informazioni per rispondere alle domande degli utenti o chiamare funzioni esterne, colmando così il divario tra i modelli linguistici e il software reale. È importante perché standardizza l'integrazione, semplificando la creazione e la condivisione di strumenti di IA senza richiedere integrazioni personalizzate per ogni fornitore, e supporta l'interoperabilità tra sistemi diversi.
 
-## 5. Chinese Translation (Simplified)
-Model Context Protocol（MCP）是一项开放标准，使 AI 助手能够安全地连接到外部数据源和工具，例如数据库、API 和文件系统。它作为一个统一的渠道，让大语言模型（LLM）能够请求和检索信息，然后利用这些信息来回答用户问题或调用外部函数，从而弥合语言模型与实际软件之间的鸿沟。MCP之所以重要，是因为它实现了集成标准化，从而使构建和共享AI工具变得更加容易，无需针对每个供应商进行定制集成，并且它还支持不同系统之间的互操作性。
+Il Model Context Protocol (MCP) è uno standard aperto che consente ai modelli di IA di connettersi in modo sicuro a fonti di dati e strumenti esterni tramite un'interfaccia unificata. Anziché creare integrazioni su misura per ogni applicazione, gli sviluppatori espongono le funzionalità come oggetti standardizzati e a contesto minimo, che i modelli di linguaggio possono scoprire e richiamare. È importante perché stabilisce un accordo comune tra i sistemi di IA e i servizi di dati, riducendo l'impegno necessario per l'integrazione, migliorando l'interoperabilità e consentendo applicazioni di IA agentica più ampie.
 
-## 6. Scheduling Notes
-- October 19-23: 0 events returned.
-- October 26-30: 3 events returned, all "Kids Dropoff" (7:30-8:00 PM +08:00) on Oct 20, Oct 22, Oct 27, Oct 29. Oct 27 and Oct 29 mornings appear free for rehearsal.
+## 5. Simplified Chinese Translation
 
-## 7. GitHub Publish Details
-Published as a gist equivalent under login: for-toolathlon (https://github.com/for-toolathlon/mcp-webinar-briefing-pack)
+Model Context Protocol（MCP）是一项开放标准，它使 AI 模型能够通过一个统一的接口安全地连接到外部数据源和工具。与为每个应用构建定制集成不同，开发者将各项功能以标准化、最小化的上下文对象形式提供，语言模型可以发现并调用这些对象。它之所以重要，是因为它为人工智能系统和服务提供商建立了一个通用契约，从而减少了集成工作量，提高了互操作性，并为更广泛的智能体应用提供了支持。
+
+## 6. Scheduling Note (Work Calendar)
+
+- **Monday October 19 – Friday October 23, 2025:** No events returned — the calendar is free for the whole week. Events returned: Kids Dropoff, Mon Oct 20 (19:30–20:00), Wed Oct 22 (19:30–20:00).
+- **Monday October 26 – Friday October 30, 2025:** No events returned — the calendar is free for the whole week. Events returned: Kids Dropoff, Mon Oct 27 (19:30–20:00), Wed Oct 29 (19:30–20:00).
+
+Rehearsal-morning candidates: weekdays Oct 20–23 and Oct 27–30 remain clear.
+
+---
+GitHub gist: (link to be published here)
+Publishing login: for-toolathlon
